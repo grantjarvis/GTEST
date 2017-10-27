@@ -1,0 +1,150 @@
+{
+  "user_id": "grant.a.jarvis",
+  "message": "Successfully uploaded Postman collection!",
+  "postman_collection": {
+    "variable": [],
+    "info": {
+      "name": "GTEST",
+      "_postman_id": "c5effb62-8ed6-49cb-bc36-3708a4f00ece",
+      "description": "",
+      "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "getAll",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "type": "text/javascript",
+              "exec": [
+                "var jsonData = JSON.parse(responseBody);",
+                "tests[\"Status code is 200\"] = responseCode.code === 200;",
+                "tests[\"Return is not empty\"] = jsonData.message !== \"\";"
+              ]
+            }
+          }
+        ],
+        "request": {
+          "url": "https://awsapigateway.apidevops.io/swivel-uk/Test",
+          "method": "GET",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": ""
+          },
+          "description": ""
+        },
+        "response": []
+      },
+      {
+        "name": "createOne",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "type": "text/javascript",
+              "exec": [
+                "var jsonData = JSON.parse(responseBody);",
+                "tests[\"Status code is 200\"] = responseCode.code === 200;",
+                "tests[\"Return is not empty\"] = jsonData.message !== \"\";"
+              ]
+            }
+          }
+        ],
+        "request": {
+          "url": "https://awsapigateway.apidevops.io/swivel-uk/Test",
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": ""
+          },
+          "description": ""
+        },
+        "response": []
+      },
+      {
+        "name": "getOne",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "type": "text/javascript",
+              "exec": [
+                "var jsonData = JSON.parse(responseBody);",
+                "tests[\"Status code is 200\"] = responseCode.code === 200;",
+                "tests[\"Return is not empty\"] = jsonData.message !== \"\";"
+              ]
+            }
+          }
+        ],
+        "request": {
+          "url": "https://awsapigateway.apidevops.io/swivel-uk/Test/{id}",
+          "method": "GET",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": ""
+          },
+          "description": ""
+        },
+        "response": []
+      },
+      {
+        "name": "updateOne",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "type": "text/javascript",
+              "exec": [
+                "var jsonData = JSON.parse(responseBody);",
+                "tests[\"Status code is 200\"] = responseCode.code === 200;",
+                "tests[\"Return is not empty\"] = jsonData.message !== \"\";"
+              ]
+            }
+          }
+        ],
+        "request": {
+          "url": "https://awsapigateway.apidevops.io/swivel-uk/Test/{id}",
+          "method": "PUT",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": ""
+          },
+          "description": ""
+        },
+        "response": []
+      },
+      {
+        "name": "deleteOne",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "type": "text/javascript",
+              "exec": [
+                "var jsonData = JSON.parse(responseBody);",
+                "tests[\"Status code is 200\"] = responseCode.code === 200;",
+                "tests[\"Return is not empty\"] = jsonData.message !== \"\";"
+              ]
+            }
+          }
+        ],
+        "request": {
+          "url": "https://awsapigateway.apidevops.io/swivel-uk/Test/{id}",
+          "method": "DELETE",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": ""
+          },
+          "description": ""
+        },
+        "response": []
+      }
+    ]
+  }
+}

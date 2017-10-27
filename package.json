@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "",
+  "author": "damiantan",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.81.0",
+    "swagger-jsdoc": "^1.9.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "lambda-tester": "^3.0.2"
+  }
+}
