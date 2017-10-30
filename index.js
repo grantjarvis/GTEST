@@ -43,7 +43,7 @@ const getAll = (event, callback) => {
 
 	//Variables
 	let toReturn = {
-		message : "This is the getAll function"
+		message : "Code some business logic."
 	}
 
 	//Example of error handler
