@@ -9,7 +9,7 @@ describe( 'handler', function() {
     return LambdaTester( myHandler )
       .event( { operation: 'getAll' } )
       .expectResult((result) => {
-        expect(result.message).to.equal('This is the getAll function');
+        expect(result.message).to.equal('Code some business logic.');
       });
   });
   it( 'Test getOne', function() {
